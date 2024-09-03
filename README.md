@@ -1,42 +1,29 @@
-<p align="center">
-  <h1 align="center">⚡▲ <code>@cloudflare/next-on-pages</code> ▲⚡</h1>
+# Next.js Static Export
 
-  <p align="center">Build, develop, and deploy Next.js apps for Cloudflare Pages.</p>
-</p>
+Next.js enables starting as a static site or Single-Page Application (SPA), then later optionally upgrading to use features that require a server.
 
-`@cloudflare/next-on-pages` is a CLI tool that you can use to build and develop [Next.js](https://nextjs.org/) applications so that they can run on the [Cloudflare Pages](https://pages.cloudflare.com/) platform.
+When running `next build`, Next.js generates an HTML file per route. By breaking a strict SPA into individual HTML files, Next.js can avoid loading unnecessary JavaScript code on the client-side, reducing the bundle size and enabling faster page loads.
 
-Alongside the `@cloudflare/next-on-pages` there is an additional package `eslint-plugin-next-on-pages` implementing an Eslint plugin which aim is to aid developers at using the `@cloudflare/next-on-pages` more efficiently and improve their overall developer experience when working with it.
+Learn more: https://nextjs.org/docs/app/building-your-application/deploying/static-exports
 
-You can see the packages contents (with their documentation) in their respective package directories:
+## Deploy your own
 
-- [`@cloudflare/next-on-pages`](https://github.com/cloudflare/next-on-pages/tree/main/packages/next-on-pages#cloudflarenext-on-pages)
-- [`eslint-plugin-next-on-pages`](https://github.com/cloudflare/next-on-pages/tree/main/packages/eslint-plugin-next-on-pages#eslint-plugin-next-on-pages)
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-static-export)
 
-Additionally there is also the `next-dev` submodule which is implemented as a separate package in this repository but included as a submodule of the main `@cloudflare/next-on-pages` package, you can see the submodule's content here:
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-static-export)
 
-- [`@cloudflare/next-on-pages/next-dev`](https://github.com/cloudflare/next-on-pages/tree/main/internal-packages/next-dev)
+## How to use
 
-## Contributing
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
 
-If you want to contribute to this project (both to the main package and the eslint one) please refer to the [Contributing document](./docs/contributing.md).
+```bash
+npx create-next-app --example with-static-export with-static-export-app
+```
 
-## References
+```bash
+yarn create next-app --example with-static-export with-static-export-app
+```
 
-Extra references you might be interested in:
-
-- [Blog post](https://blog.cloudflare.com/next-on-pages)
-
-  The original blog post introducing `@cloudflare/next-on-pages` (24/10/2022), it goes into details on the inspiration for this package and provides some details on how it works.
-
-- [Cloudflare Next.js Guide](https://developers.cloudflare.com/pages/framework-guides/deploy-a-nextjs-site/)
-
-  Cloudflare guide on how to create and deploy a Next.js application. The application can be either static (and deployed as simple static assets) or dynamic using the edge runtime (using `@cloudflare/next-on-pages`).
-
-- [Caching and Data Revalidation](./packages/next-on-pages/docs/caching.md)
-
-  Documentation on how the caching and data revalidation for applications built using `@cloudflare/next-on-pages` works.
-
-- [Technical Documentation](./docs/technical)
-
-  Explanations and insights into how `@cloudflare/next-on-pages` works, design decisions behind different aspects, and how it handles different Next.js features.
+```bash
+pnpm create next-app --example with-static-export with-static-export-app
+```

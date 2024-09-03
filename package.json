@@ -1,33 +1,18 @@
 {
-	"name": "next-on-pages-monorepo",
-	"private": true,
-	"workspaces": [
-		"internal-packages/*",
-		"packages/*",
-		"pages-e2e",
-		"pages-e2e/features/*"
-	],
-	"scripts": {
-		"prettier": "prettier --ignore-path .prettierignore --ignore-path .gitignore .",
-		"prettier__check": "npm run prettier -- --check",
-		"prettier:check": "FORCE_COLOR=1 turbo run prettier__check",
-		"prettier__fix": "npm run prettier -- --write",
-		"prettier:fix": "FORCE_COLOR=1 turbo prettier__fix",
-		"lint": "FORCE_COLOR=1 turbo lint",
-		"types-check": "FORCE_COLOR=1 turbo types-check",
-		"build": "FORCE_COLOR=1 turbo build",
-		"build:watch": "FORCE_COLOR=1 turbo build:watch",
-		"test:unit": "FORCE_COLOR=1 turbo test:unit",
-		"pretest:e2e": "npm run build -- --filter next-on-pages",
-		"test:e2e": "FORCE_COLOR=1 turbo test:e2e --filter pages-e2e",
-		"publish": "turbo build & changeset publish",
-		"changeset": "npx changeset"
-	},
-	"devDependencies": {
-		"prettier": "^3.0.0",
-		"turbo": "^1.10.15"
-	},
-	"engines": {
-		"node": "20.10.0"
-	}
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "serve out"
+  },
+  "dependencies": {
+    "@types/node": "^18.11.5",
+    "@types/react-dom": "^18.0.7",
+    "@types/react": "^18.0.23",
+    "next": "latest",
+    "react-dom": "^18.2.0",
+    "react": "^18.2.0",
+    "serve": "^14.2.0",
+    "typescript": "^4.8.4"
+  }
 }
