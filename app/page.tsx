@@ -1,6 +1,6 @@
 import Link from "next/link";
 import NavBar from "./components/NavBar";
-import imagePath from "./assets/your_image_icon.png";
+import React = require("react");
 
 const Home = () => {
     let items = ["Home", "Product", "Service"];
@@ -9,7 +9,7 @@ const Home = () => {
    <div>
           <NavBar
           brandName="My Brand"
-          imageSrcPath={imagePath}
+              imageSrcPath={"./assets/IronOreEgg.png"}
               navItems={items} />
 
       <h1>Home</h1>
