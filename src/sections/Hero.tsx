@@ -4,7 +4,6 @@ import { Details } from "../components/Details";
 import { Demo } from "../components/Demo";
 import { Section } from "../components/Section";
 import { GradientText } from "../components/GradientText";
-import { WaitlistForm } from "../components/WaitlistForm";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -35,11 +34,6 @@ export const Hero = () => {
           Vivid makes front-end development effortless with our in-browser
           visual editor to modify your code.
         </Details>
-        <WaitlistForm
-          id="hero-waitlist"
-          data-aos="zoom-y-out"
-          data-aos-delay="300"
-        />
       </div>
       {/* Image */}
       <Demo

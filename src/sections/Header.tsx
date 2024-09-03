@@ -68,7 +68,6 @@ export const Header = ({
           <LinkButton href="/">Docs</LinkButton>
         </li>
         <li className={`transition ${!nextSection && "hidden"}`}>
-          <Button onClick={goToEmail}>Waitlist</Button>
         </li>
       </ul>
     </nav>
