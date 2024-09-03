@@ -1,7 +1,6 @@
 import { NewsletterSpheres } from "../svg/NewsletterSpheres";
 import { Card } from "../components/Card";
 import { Section } from "../components/Section";
-import { WaitlistForm } from "../components/WaitlistForm";
 
 // Built with Vivid (https://vivid.lol) ⚡️
 
@@ -23,11 +22,6 @@ export const Newsletter = () => {
           <h2 className="text-3xl font-bold text-gray-100">
             Save your spot today
           </h2>
-          <p className="text-lg text-light">
-            By joining our waitlist, you&apos;ll be the first to see our
-            product. We&apos;d love to learn from you along the way!
-          </p>
-          <WaitlistForm id="newsletter-waitlist" />
         </div>
       </Card>
     </Section>
