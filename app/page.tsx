@@ -1,6 +1,5 @@
 import Link from "next/link";
-import NavBar from "./components/NavBar";
-import React = require("react");
+import NavBar from "./components/navbar";
 
 const Home = () => {
     let items = ["Home", "Product", "Service"];
