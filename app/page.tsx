@@ -1,5 +1,6 @@
 import Link from "next/link";
 import NavBar from "./parts/NavBar";
+import 'bootstrap/dist/css/bootstrap.css'
 
 const Home = () => {
     let items = ["Home", "Product", "Service"];
