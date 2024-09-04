@@ -4,7 +4,7 @@ import Link from 'next/link'
 import GamePreview from './components/GamePreview';
 import Navbar from './components/Navbar';
 
-const SlugsImageLink = '/Slugs.png';
+const SlugsImageLink = "/Slugs.png";
 const SlugsGameLink = "https://armanabadi.github.io/Slugs/";
 const SlugsGameTitle = "Slugs";
 const SlugsGameDescription = "2D RPG with perlin noise map generation";
