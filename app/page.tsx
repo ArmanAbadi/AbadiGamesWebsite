@@ -4,7 +4,7 @@ import Link from 'next/link'
 import GamePreview from './components/GamePreview';
 import Navbar from './components/Navbar';
 
-const SlugsImageLink = "/Slugs.png";
+const SlugsImageLink = '/Slugs.png';
 const SlugsGameLink = "https://armanabadi.github.io/Slugs/";
 const SlugsGameTitle = "Slugs";
 const SlugsGameDescription = "2D RPG with perlin noise map generation";
@@ -18,7 +18,7 @@ export default function Home() {
       </div>
 
       <div>
-        <p>  Hi, I'm Arman Abadi, I'm a full stack developer based out of Vancouver BC Canada. </p>
+        <p>  Hi, Im Arman Abadi, Im a full stack developer based out of Vancouver BC Canada. </p>
         <p>  I have 7 years experience as a full stack developer.</p>
         <p>  My main focus has been in the games industry but I have completed projects in a variety of fields!</p>
       </div>
