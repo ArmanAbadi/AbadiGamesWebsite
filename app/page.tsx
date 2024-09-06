@@ -32,11 +32,13 @@ export default function Home() {
 <div className="p-3 py-40 w-full bg-base-100">
       <div className="flex w-full justify-center text-2xl">
         <h1>  
-          Hi, my name is Arman.
+          Hi, my name is Arman Abadi.
            <br></br> I'm a Fullstack Developer from Vancouver British Columbia.
         </h1>
       </div>
 </div>
+
+
 
       <div className="py-10 card rounded-box grid place-items-center">
 
@@ -48,4 +50,5 @@ export default function Home() {
   )
 }
 
+//<div className="flex w-full justify-center text-2xl"> Try my games! </div>
 ///style={{backgroundColor: "#d3e5fe"}}
