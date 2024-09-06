@@ -32,8 +32,8 @@ export default function Home() {
 <div className="p-3 py-40 w-full bg-base-100">
       <div className="flex w-full justify-center text-2xl">
         <h1>  
-          Hi, my name is Arman Abadi.
-           <br></br> I'm a Fullstack Developer from Vancouver British Columbia.
+          {"Hi, my name is Arman Abadi."}
+           <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
         </h1>
       </div>
 </div>
