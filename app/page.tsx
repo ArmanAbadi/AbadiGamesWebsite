@@ -9,28 +9,38 @@ const SlugsGameLink = "https://armanabadi.github.io/Slugs/";
 const SlugsGameTitle = "Slugs";
 const SlugsGameDescription = "2D RPG with perlin noise map generation";
 
+const PurpleColor = "217, 70, 239";
+
+const VancouverImagePath = "spencer-watson-VLW2GjQHlgE-unsplash.jpg"
+
 
 export default function Home() {
   return (
     <main>
-      <div className="navbar bg-base-100">
-        <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
+
+<div className="navbar bg-base-100">
+      <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
+      <a className="btn glass" href="mailto:arman_abadi@hotmail.com?subject=Hi Arman, I'd like to hire you">Contact me!</a>
+</div>
+
+
+<div className="p-3 py-40 w-full bg-base-100">
+      <div className="flex w-full justify-center text-2xl">
+        <h1>  
+          Hi, my name is Arman.
+           <br></br> I'm a Fullstack Developer from Vancouver British Columbia.
+        </h1>
       </div>
+</div>
+
+      <div className="py-10 card rounded-box grid place-items-center">
 
       <div>
-        <p>  Hi, Im Arman Abadi, Im a full stack developer based out of Vancouver BC Canada. </p>
-        <p>  I have 7 years experience as a full stack developer.</p>
-        <p>  My main focus has been in the games industry but I have completed projects in a variety of fields!</p>
-      </div>
-
-      <div className="flex w-full flex-col">
-      <div className="divider"></div>
-      <div className="card bg-base-300 rounded-box grid place-items-center">
-
-
-      <div className = "flex justify-center">
       <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={SlugsGameTitle} GameDescription={SlugsGameDescription}></GamePreview>
-      </div></div></div>
+      </div></div>
+
     </main>
   )
 }
+
+///style={{backgroundColor: "#d3e5fe"}}
