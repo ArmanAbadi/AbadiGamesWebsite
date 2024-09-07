@@ -5,8 +5,8 @@ import GamePreview from './components/GamePreview';
 import Navbar from './components/Navbar';
 import DividerGray from './components/DividerGray';
 
-const SlugsImageLink = '/Slugs.png';
-const SlugsGameLink = "https://armanabadi.github.io/Slugs/";
+const SlugsImageLink = '/BattleBoi.png';
+const SlugsGameLink = "https://armanabadi.github.io/BattleBoi/";
 
 const PurpleColor = "217, 70, 239";
 
