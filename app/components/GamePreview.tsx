@@ -8,9 +8,7 @@ const GamePreview = (GamePreviewImageAndLinkProps: GamePreviewImageAndLinkProps)
     <div className="card bg-base-100 w-96 shadow-xl items-end">
     <figure>
     <Link href={GamePreviewImageAndLinkProps.GameLink}>
-    <img
-    src={String(GamePreviewImageAndLinkProps.ImageLink)}
-    alt="Shoes" />
+    <img src={String(GamePreviewImageAndLinkProps.ImageLink)} />
     </Link>
     </figure>
 
