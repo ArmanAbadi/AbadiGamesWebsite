@@ -22,10 +22,12 @@ export default function Home() {
 <div className="navbar p-3 bg-gray-100">
     <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
 
-    <div className=" flex flex-1 justify-end px-2">
 
+    <div className="flex w-full justify-end text-2xl">Need a body? Hire Abadi!</div>
+
+    <div className=" flex flex-1 justify-end px-2">
     <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn PulseColor ">Contact me!
+    <button className="btn PulseColor w-32">Contact me!
     </button>
     </a>
 
