@@ -34,8 +34,6 @@ export default function Home() {
     </div>
 </div>
 
-<DividerGray></DividerGray>
-
 <div className="p-3 py-32 w-full bg-gray-100">
       <div className="flex w-full justify-center text-2xl">
         <h1 className="text-center">  
