@@ -29,3 +29,35 @@ body {
   rgb(var(--background-start-rgb));
   height: 100vh;
 }
+
+@-webkit-keyframes pulse {
+  0% { background-color: #ddc5dd; }
+  50% { background-color: #FFF; }
+  100% { background-color: #ddc5dd; }
+}
+
+@-moz-keyframes pulse {
+  0% { background-color: -#ddc5dd; }
+  50% { background-color: #FFF; }
+  100% { background-color: #ddc5dd; }
+}
+
+@-o-keyframes pulse {
+  0% { background-color: #ddc5dd; }
+  50% { background-color: #FFF; }
+  100% { background-color: #ddc5dd; }
+}
+
+@keyframes pulse {
+  0% { background-color: #ddc5dd; }
+  50% { background-color: #FFF; }
+  100% { background-color: #ddc5dd; }
+}
+
+.PulseColor {
+  background: #FFF;
+  -webkit-animation: pulse 3s infinite; /* Safari 4+ */
+  -moz-animation:    pulse 3s infinite; /* Fx 5+ */
+  -o-animation:      pulse 3s infinite; /* Opera 12+ */
+  animation:         pulse 3s infinite; /* IE 10+, Fx 29+ */
+}

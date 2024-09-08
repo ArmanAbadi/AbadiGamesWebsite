@@ -22,17 +22,16 @@ export default function Home() {
 <div className="navbar p-3 bg-gray-100">
     <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
 
-    <div className="flex flex-1 justify-end px-2">
-    <div className = " bg-base-100">
-    
+    <div className=" flex flex-1 justify-end px-2">
+
     <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn">Contact me!
+    <button className="btn PulseColor ">Contact me!
     </button>
     </a>
 
     </div>
-    </div>
 </div>
+
 
 <div className="p-3 py-32 w-full bg-gray-100">
       <div className="flex w-full justify-center text-2xl">
