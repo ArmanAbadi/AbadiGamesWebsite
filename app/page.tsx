@@ -19,12 +19,12 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between">
     <main className="flex flex-col h-screen justify-between">
 
-<div className="navbar p-3 bg-gray-100 text-black">
+<div className="navbar p-3 bg-base-100">
     <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
 
     <div className=" flex flex-1 justify-end px-2">
     <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn PulseColor w-32 text-black">Contact me!
+    <button className="btn PulseColor w-32">Contact me!
     </button>
     </a>
 
@@ -32,7 +32,7 @@ export default function Home() {
 </div>
 
 
-<div className="p-3 py-32 w-full bg-gray-100 text-black">
+<div className="p-3 py-32 w-full bg-base-100">
       <div className="flex w-full justify-center text-2xl">
         <h1 className="text-center">  
           {"Hi, my name is Arman Abadi."}
