@@ -50,12 +50,9 @@ export default function Home() {
 
 <div className="py-10 card rounded-box grid place-items-center">
 
-<img src={String("https://i.sstatic.net/gVE0j.png")} />
 <div>
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
-
-<img src={String("https://i.sstatic.net/gVE0j.png")} />
 
     </main>
   )
@@ -63,3 +60,6 @@ export default function Home() {
 
 //<div className="flex w-full justify-center text-2xl"> Try my games! </div>
 ///style={{backgroundColor: "#d3e5fe"}}
+
+
+//<img src={String("https://i.sstatic.net/gVE0j.png")} />
