@@ -12,23 +12,24 @@ const PurpleColor = "217, 70, 239";
 
 const VancouverImagePath = "spencer-watson-VLW2GjQHlgE-unsplash.jpg"
 
+const LinkedInLogo = "LinkedInLogo.png"
 
 export default function Home() {
   return (
-    <main>
+  <div className="flex flex-col h-screen justify-between">
+    <main className="flex flex-col h-screen justify-between">
 
 <div className="navbar p-3 bg-base-100">
     <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
 
     <div className="flex flex-1 justify-end px-2">
     <div className = " bg-base-100">
-    <div className=" p-3 dropdown dropdown-end">
-    <div tabIndex={0} role="button" className="btn m-1">Contact me!</div>
-    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-[1] w-100 p-2 shadow">
-    <li><a href = "mailto:armanabadi.aa@gmail.com?subject=Hi Arman, I'd like to hire you">armanabadi.aa@gmail.com</a></li>
-    <li><a href = "https://www.linkedin.com/in/armanabadi/">https://www.linkedin.com/in/armanabadi/</a></li>
-    </ul>
-    </div>
+    
+    <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
+    <button className="btn">Contact me!
+    </button>
+    </a>
+
     </div>
     </div>
 </div>
@@ -48,18 +49,19 @@ export default function Home() {
 
 <DividerGray></DividerGray>
 
-<div className="py-10 card rounded-box grid place-items-center">
+<div className=" purpleGradient py-10 grid place-items-center">
 
 <div>
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
 
-    </main>
+<footer className="footer w-16 h-16 ">
+<Link href={"https://www.linkedin.com/in/armanabadi/"}>
+<img src={String(LinkedInLogo)}/>
+</Link>
+</footer>
+
+
+    </main></div>
   )
 }
-
-//<div className="flex w-full justify-center text-2xl"> Try my games! </div>
-///style={{backgroundColor: "#d3e5fe"}}
-
-
-//<img src={String("https://i.sstatic.net/gVE0j.png")} />
