@@ -20,30 +20,24 @@ export default function Home() {
     <main className="flex flex-col h-screen justify-between">
 
 <div className="navbar p-3 bg-base-100">
-    <a className="btn btn-ghost font-bold text-2xl">AbadiGames</a>
-
-    <div className=" flex flex-1 justify-end px-2">
-    <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn bg-base-100">Contact me!
-    </button>
-    </a>
-
-    </div>
+  <Link href={""} className="px-2 font-bold text-2xl">AbadiGames</Link>
+  <div className="flex flex-1 justify-end px-2"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top" className="px-2">
+  <div className = "px-4">Need a body? Hire Abadi! Contact me!
+  </div>    
+  </a>
+  </div>
 </div>
-
 
 <div className="p-3 py-32 w-full bg-base-100">
       <div className="flex w-full justify-center">
         <h1 className="text-center">  
           {"Hi, my name is Arman Abadi."}
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
-           <br></br> {"I have 7 years experience developing mobile and desktop applications with the Unity game engine."}
+           <br></br>
            <br></br> {"Check out my projects below and send me an email of what you think!"}
         </h1>
       </div>
 </div>
-
-<DividerGray></DividerGray>
 
 <div className=" purpleGradient py-10 grid place-items-center">
 
@@ -63,3 +57,15 @@ export default function Home() {
 }
 
 // <div className="flex w-full justify-end text-2xl">Need a body? Hire Abadi!</div>
+//<DividerGray></DividerGray>
+
+/* <div className="p-3 py-32 w-full bg-base-100">
+      <div className="flex w-full">
+        <h1>  
+          {"I've previously worked as a Software Engineer on the following projects:"}
+           <br></br> 
+           <br></br><Link href="https://www.gotconquest.com/" style={{color: "blue"}}>Game of thrones conquest.</Link>
+           <br></br><Link href="https://battlerally.com/" style={{color: "blue"}}>Battle Rally.</Link>
+        </h1>
+      </div>
+</div> */
