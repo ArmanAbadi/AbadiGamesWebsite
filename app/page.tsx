@@ -24,7 +24,7 @@ export default function Home() {
 
     <div className=" flex flex-1 justify-end px-2">
     <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn">Contact me!
+    <button className="btn bg-base-100">Contact me!
     </button>
     </a>
 
