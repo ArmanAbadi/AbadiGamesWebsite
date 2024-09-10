@@ -1,4 +1,4 @@
-import Image from 'next/image'
+9import Image from 'next/image'
 import Link from 'next/link'
 
 import GamePreview from './components/GamePreview';
