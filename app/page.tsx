@@ -24,7 +24,7 @@ export default function Home() {
 
     <div className=" flex flex-1 justify-end px-2">
     <a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top">
-    <button className="btn PulseColor w-32">Contact me!
+    <button className="btn">Contact me!
     </button>
     </a>
 
@@ -33,7 +33,7 @@ export default function Home() {
 
 
 <div className="p-3 py-32 w-full bg-base-100">
-      <div className="flex w-full justify-center text-2xl">
+      <div className="flex w-full justify-center">
         <h1 className="text-center">  
           {"Hi, my name is Arman Abadi."}
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
