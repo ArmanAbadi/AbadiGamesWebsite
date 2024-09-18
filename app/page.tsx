@@ -29,13 +29,22 @@ export default function Home() {
   </div>
 </div>
 
-<div className="flex w-full justify-center">
-  <div className="py-10 w-96 h-96">
-<img
-  className="mask mask-hexagon"
-  src="ArmanFace.png" />
-  </div>
-</div>
+<div className="container">
+            <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
+                <defs>
+                    <mask id="mask">
+                        <path id="Path_611" data-name="Path 611" d="M1,38a12.225,12.225,0,0,1,2.558-3.025L41.351,13.462A21.12,21.12,0,0,1,46.733,12.4a14.319,14.319,0,0,1,4.81.765L89.2,34.814A7.333,7.333,0,0,1,92,37a7.273,7.273,0,0,1,1,3.4v45.3A6.741,6.741,0,0,1,92,89a12.9,12.9,0,0,1-3.015,2.945L50.42,110.628a8.953,8.953,0,0,1-3.688.786,13.383,13.383,0,0,1-4.153-.992L4.2,92.012A12.105,12.105,0,0,1,1,89a7.112,7.112,0,0,1-1-3.581V41.534A9.569,9.569,0,0,1,1,38Z" transform="translate(1.502 -10.892)" fill="#FFFFFF"/>
+                    </mask>
+                </defs>
+                <image mask="url(#mask)"
+                    href="ArmanFace.png" x="-3" y="2" width="100" height="100">
+                </image>
+                <g className="frame-border" fill="none">
+                    <path id="Path_611" data-name="Path 611" d="M1,38a12.225,12.225,0,0,1,2.558-3.025L41.351,13.462A21.12,21.12,0,0,1,46.733,12.4a14.319,14.319,0,0,1,4.81.765L89.2,34.814A7.333,7.333,0,0,1,92,37a7.273,7.273,0,0,1,1,3.4v45.3A6.741,6.741,0,0,1,92,89a12.9,12.9,0,0,1-3.015,2.945L50.42,110.628a8.953,8.953,0,0,1-3.688.786,13.383,13.383,0,0,1-4.153-.992L4.2,92.012A12.105,12.105,0,0,1,1,89a7.112,7.112,0,0,1-1-3.581V41.534A9.569,9.569,0,0,1,1,38Z" transform="translate(1.502 -10.892)" stroke-linecap="round" />
+                </g></g>
+            </svg>
+        </div>
+
 
 <div className="p-3 py-32 w-full bg-base-100 font-extrabold">
       <div className="flex w-full justify-center">
@@ -95,3 +104,11 @@ export default function Home() {
 <path d="M414 5.547C426.376 -1.59831 441.624 -1.59831 454 5.547L847.013 232.453C859.389 239.598 867.013 252.803 867.013 267.094V720.906C867.013 735.197 859.389 748.402 847.013 755.547L454 982.453C441.624 989.598 426.376 989.598 414 982.453L20.9873 755.547C8.61125 748.402 0.987305 735.197 0.987305 720.906V267.094C0.987305 252.803 8.61126 239.598 20.9873 232.453L414 5.547Z" fill="black"/>
 </svg>
 </div> */}
+
+// <div className="flex w-full justify-center">
+//   <div className="py-10 w-96 h-96">
+// <img
+//   className="mask mask-hexagon2"
+//   src="ArmanFace.png" />
+//   </div>
+// </div>

@@ -123,3 +123,24 @@ body {
       background: darksalmon;
     }
 }
+
+.container {
+  width: 450px;
+  height: 450px;
+  margin: 1em auto;
+}
+
+.frame-border {
+  stroke: #181818;
+  stroke-width: 2;
+}
+
+.frame-border:hover{
+  stroke: #057a00;
+  stroke-width: 2;
+}
+
+.hoverTarget:hover .frame-border {
+  stroke: #057a00;
+  stroke-width: 2;
+}
