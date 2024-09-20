@@ -256,11 +256,11 @@ body {
 
 .drop{
 	background-color: white;
-	width: calc(100vw*0.001);
+	width: calc(100vw*0.0005);
 	height: calc(100vh*0.1);
 	position: absolute;
 	top: calc(50% - 100vh*0.1); 
-	left: calc(50% - 100vw*0.001/2);
+	left: calc(50% - 100vw*0.0005/2);
 	animation-name: fall;
 	animation-duration: var(--duration);
 	animation-delay: var(--delay);
