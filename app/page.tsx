@@ -20,7 +20,7 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 bg-base-100 font-extrabold">
+<div className="navbar p-3 bg-base-100 font-extraboldTop">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div>Need a body? Hire Abadi! Contact me!
@@ -46,7 +46,7 @@ export default function Home() {
         </div>
 
 
-<div className="p-3 py-32 w-full bg-base-100 font-extrabold">
+<div className="p-3 py-32 w-full bg-base-100 font-extraboldTop">
       <div className="flex w-full justify-center">
         <h1 className="text-center">  
           {"Hi, I'm"}
