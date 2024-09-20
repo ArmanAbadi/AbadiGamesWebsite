@@ -105,10 +105,10 @@ export default function Home() {
 </svg>
 </div> */}
 
-// <div className="flex w-full justify-center">
-//   <div className="py-10 w-96 h-96">
-// <img
-//   className="mask mask-hexagon2"
-//   src="ArmanFace.png" />
-//   </div>
-// </div>
+{/* <div className="flex w-full justify-center">
+  <div className="py-10 w-96 h-96">
+<img
+  className="mask mask-hexagon2"
+  src="ArmanFace.png" />
+  </div>
+</div> */}
