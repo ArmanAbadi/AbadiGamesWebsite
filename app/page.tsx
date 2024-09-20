@@ -5,6 +5,7 @@ import GamePreview from './components/GamePreview';
 import Navbar from './components/Navbar';
 import DividerGray from './components/DividerGray';
 import AbadiGamesLogo from './components/AbadiGamesLogo';
+import Pond from './components/Pond';
 
 const SlugsImageLink = '/BattleBoii.png';
 const SlugsGameLink = "https://armanabadi.github.io/BattleBoi/";
@@ -20,7 +21,7 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 bg-base-100 font-extraboldTop">
+<div className="navbar p-3 font-extraboldTop">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div>Need a body? Hire Abadi! Contact me!
@@ -44,13 +45,14 @@ export default function Home() {
                 </g></g>
             </svg>
         </div>
+        
+<Pond></Pond>
 
-
-<div className="p-3 py-32 w-full bg-base-100 font-extraboldTop">
+<div className="p-3 py-32 w-full font-extraboldTop">
       <div className="flex w-full justify-center">
         <h1 className="text-center">  
           {"Hi, I'm"}
-          <span className="text-purple-700"> Arman Abadi</span>.
+          <span className="text-blue-400"> Arman Abadi</span>.
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
         </h1>
       </div>
@@ -67,9 +69,9 @@ export default function Home() {
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div></div>
 
-<footer className="footer w-16 h-16 ">
+<footer className="footer bg-black">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
-<img src={String(LinkedInLogo)}/>
+<img className = "w-16 h-16" src={String(LinkedInLogo)}/>
 </Link>
 </footer>
 
