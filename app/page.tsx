@@ -20,7 +20,7 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 bg-base-100 font-thick">
+<div className="navbar p-3 bg-base-100 font-extrabold">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end px-2"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry" target="_top" className="px-2">
   <div className = "px-4">Need a body? Hire Abadi! Contact me!
