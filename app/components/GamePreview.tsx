@@ -12,7 +12,7 @@ const GamePreview = (GamePreviewImageAndLinkProps: GamePreviewImageAndLinkProps)
     </Link>
     </figure>
 
-    <div className="card-body">
+    <div className="card-body bg-white">
       
     <h2 className="card-title text-2xl"> {GamePreviewImageAndLinkProps.GameName} </h2 >
     <h2 className="text-xl">{GamePreviewImageAndLinkProps.GameDescription}</h2>

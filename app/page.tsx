@@ -60,7 +60,7 @@ export default function Home() {
 
 <div className=" purpleGradient">
 
-<h1 className="text-center py-10 font-extrabold text-white">  
+<h1 className="text-center py-10 font-extrabold">  
           {"Projects in the works"}
         </h1>
 <div className="grid place-items-center">
