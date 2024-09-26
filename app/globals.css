@@ -17,9 +17,11 @@
 }
 /* Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241 */
 
-
+.brightColor{
+    background-color: var(--foreground-rgb);
+}
 .darkColor{
-	background-color: #293241;
+	background-color: var(--background-end-rgb);
 }
 .Orangey{
 	color: #ee6c4d;
