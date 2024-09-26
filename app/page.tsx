@@ -55,7 +55,7 @@ export default function Home() {
       <div className="flex w-full justify-center">
         <h1 className="text-center">  
           {"Hi, I'm"}
-          <span className="text-blue-400"> Arman Abadi</span>.
+          <span className="Orangey"> Arman Abadi</span>.
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
         </h1>
       </div>
@@ -66,18 +66,19 @@ export default function Home() {
 <h1 className="text-center py-10 font-extrabold">  
           {"Projects in the works"}
         </h1>
+        
 <div className="grid place-items-center">
 
 <div>
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div></div>
 
-<footer className="footer bg-black">
+
+<footer className="footer darkColor">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
 <img className = "w-16 h-16" src={String(LinkedInLogo)}/>
 </Link>
 </footer>
-
 
     </main></div>
   )

@@ -5,22 +5,17 @@ import { UrlObject } from 'url'
 
 const GamePreview = (GamePreviewImageAndLinkProps: GamePreviewImageAndLinkProps) => {
   return (
-    <div className="card bg-base-100 w-96 shadow-xl items-end text-black">
-    <figure>
+
+    <div className="card bg-base-100 w-96 shadow-xl text-black">
+  <figure>
     <Link href={GamePreviewImageAndLinkProps.GameLink}>
     <img src={String(GamePreviewImageAndLinkProps.ImageLink)} />
     </Link>
     </figure>
-
-    <div className="card-body bg-white">
-      
-    <h2 className="card-title text-2xl"> {GamePreviewImageAndLinkProps.GameName} </h2 >
-    <h2 className="text-xl">{GamePreviewImageAndLinkProps.GameDescription}</h2>
+  <div className="card-body">
+    <h2 className="card-title text-2x1">{GamePreviewImageAndLinkProps.GameName}</h2>
+    <p className="text-xl">{GamePreviewImageAndLinkProps.GameDescription}</p>
     <div className="card-actions justify-end">
-
-    </div>
-    </div>
-
     <Link href={GamePreviewImageAndLinkProps.GameLink}>
       <div className="justify-center bg-white">
         <button className="btn">Play<svg width="20" height="20" viewBox="0 0 65 72" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -30,8 +25,9 @@ const GamePreview = (GamePreviewImageAndLinkProps: GamePreviewImageAndLinkProps)
         </button>
       </div>
     </Link>
-
     </div>
+  </div>
+</div>
   )
 }
 
