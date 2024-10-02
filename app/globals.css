@@ -6,6 +6,7 @@
   --foreground-rgb: #e0fbfc ;
   --background-start-rgb: #3d5a80 ;
   --background-end-rgb: #293241;
+  --Light-Blue: rgb(119, 169, 233) ;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,7 +28,7 @@
 	color: #ee6c4d;
 }
 .DarkBlue{
-	color: #3d5a80;
+	color: var(--background-start-rgb);
 }
 
 body {
@@ -274,7 +275,7 @@ body {
 }
 
 .drop{
-	background-color: DarkBlue;
+	background-color: var(--background-start-rgb);
 	width: calc(100vw*0.0005);
 	height: calc(100vh*0.1);
 	position: absolute;
@@ -313,7 +314,7 @@ body {
 	left: calc(50% - 100vw *0.1/2);
 
 	border-radius: 50%;
-	border: solid DarkBlue 1px;
+	border: solid var(--background-start-rgb) 1px;
 	animation-name: spread;
 	animation-duration: var(--duration);
 	animation-delay: var(--delay);
@@ -355,7 +356,7 @@ body {
 	right: 35%;
 	border-radius: 8px;
 	clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-	background-color: white;
+	background-color: var(--background-start-rgb);
 	transform-origin: bottom;
 	animation-name: splash;
 	animation-duration: var(--duration);
@@ -394,7 +395,7 @@ body {
 .particles > div{
 	position: absolute;	
 	border-radius: 100%;
-	background-color: white;
+	background-color: var(--Light-Blue);
 	animation-duration: var(--duration);
 	animation-delay: var(--delay);
 	animation-iteration-count: infinite;
