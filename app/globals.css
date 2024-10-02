@@ -26,6 +26,9 @@
 .Orangey{
 	color: #ee6c4d;
 }
+.DarkBlue{
+	color: #3d5a80;
+}
 
 body {
   color: var(--foreground-rgb);
@@ -271,7 +274,7 @@ body {
 }
 
 .drop{
-	background-color: white;
+	background-color: DarkBlue;
 	width: calc(100vw*0.0005);
 	height: calc(100vh*0.1);
 	position: absolute;
@@ -310,7 +313,7 @@ body {
 	left: calc(50% - 100vw *0.1/2);
 
 	border-radius: 50%;
-	border: solid white 1px;
+	border: solid DarkBlue 1px;
 	animation-name: spread;
 	animation-duration: var(--duration);
 	animation-delay: var(--delay);
