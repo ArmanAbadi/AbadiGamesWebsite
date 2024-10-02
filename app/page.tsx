@@ -22,7 +22,7 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between brightColor">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 font-extraboldTop darkColor">
+<div className="navbar p-3 font-extraboldTop background-start-rgb">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div>Need a body? Hire Abadi! Contact me!
@@ -67,14 +67,13 @@ export default function Home() {
           {"Projects in the works"}
         </h1>
         
-<div className="grid place-items-center">
-
-<div>
+        <div className="carousel rounded-box flex justify-center space-x-4">
+        <div className="carousel-item">
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div></div>
 
 
-<footer className="footer darkColor">
+<footer className="footer background-end-rgb">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
 <img className = "w-16 h-16" src={String(LinkedInLogo)}/>
 </Link>
