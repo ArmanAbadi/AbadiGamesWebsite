@@ -31,7 +31,6 @@ export default function Home() {
   </div>
 </div>
 
-<img src="/games/ArmanFace.png" width="320" />
 <div className="container py-24" onClick={() => DisplayDivNone()}>
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
                 <defs>
