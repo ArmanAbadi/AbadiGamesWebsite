@@ -7,7 +7,7 @@ export default function Home(){
 
     useEffect(() => {
         const script = document.createElement("script")
-        script.src = "BattleBoi/Build/webgl.loader.js"
+        script.src = "games/Battleboi/Build/webgl.loader.js"
         script.async = true;
 
         document.body.appendChild(script);
@@ -20,7 +20,7 @@ export default function Home(){
     return(
         <div>
             <iframe 
-            src = "Battleboi/index.html" 
+            src = "games/Battleboi/index.html" 
             width = "100%" 
             height = "100%" 
             style={{border:"none", position:"absolute", top:0, left: 0, right: 0, bottom: 0}}
