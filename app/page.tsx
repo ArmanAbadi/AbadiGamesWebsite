@@ -9,7 +9,7 @@ import AbadiGamesLogo from './components/AbadiGamesLogo';
 import Pond from './components/Pond';
 
 const SlugsImageLink = '/BattleBoii.png';
-const SlugsGameLink = "/battleboi";
+const SlugsGameLink = "/BattleBoi";
 
 const PurpleColor = "217, 70, 239";
 
