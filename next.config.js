@@ -10,7 +10,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Encoding",
-            value: "application/octet-stream",
+            value: "br",
           }
         ]
       },
@@ -19,7 +19,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Encoding",
-            value: "application/octet-stream",
+            value: "br",
           }
         ]
       },
@@ -28,7 +28,7 @@ const nextConfig = {
         headers: [
           {
             key: "Content-Encoding",
-            value: "application/octet-stream",
+            value: "br",
           }
         ]
       },
