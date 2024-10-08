@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    experimental: {
-    appDir: true,
-  },
-  headers: async () => {
+    async headers() {
     return [
       {
         source: "/Games/BattleBoi/Build/webgl.framework.js.br",
