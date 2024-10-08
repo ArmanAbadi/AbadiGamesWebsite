@@ -14,6 +14,24 @@ const nextConfig = {
           }
         ]
       },
+      {
+        source: "/Games/BattleBoi/Build/webgl.data.br",
+        headers: [
+          {
+            key: "Content-Encoding",
+            value: "br",
+          }
+        ]
+      },
+      {
+        source: "/Games/BattleBoi/Build/webgl.wasm.br",
+        headers: [
+          {
+            key: "Content-Encoding",
+            value: "br",
+          }
+        ]
+      },
     ];
   },
   output: "standalone",}
