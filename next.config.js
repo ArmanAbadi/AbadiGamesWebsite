@@ -6,7 +6,7 @@ const nextConfig = {
   headers: async () => {
     return [
       {
-        source: "/Games/BattleBoi/Build/webgl.framework.js.br",
+        source: "/public/Games/BattleBoi/Build/webgl.framework.js.br",
         headers: [
           {
             key: "Content-Encoding",
@@ -15,7 +15,7 @@ const nextConfig = {
         ]
       },
       {
-        source: "/Games/BattleBoi/Build/webgl.data.br",
+        source: "/public/Games/BattleBoi/Build/webgl.data.br",
         headers: [
           {
             key: "Content-Encoding",
@@ -24,7 +24,7 @@ const nextConfig = {
         ]
       },
       {
-        source: "/Games/BattleBoi/Build/webgl.wasm.br",
+        source: "/public/Games/BattleBoi/Build/webgl.wasm.br",
         headers: [
           {
             key: "Content-Encoding",
