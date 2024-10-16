@@ -31,12 +31,6 @@ export default function Home() {
   </div>
 </div>
 
-<button id="cake" >Take Screeny</button>
-
-<br />
-
-<canvas id="fake"></canvas>
-
 <div className="container py-24" onClick={() => DisplayDivNone()}>
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
                 <defs>
@@ -130,42 +124,3 @@ function DisplayDivNone() {
     T.style.display = "block";  // <-- Set it to block
   }
 }
-
-
-const canIRun  = global.navigator.mediaDevices.getDisplayMedia 
-
-const takeScreenShot = async () => {
-      const stream = await (navigator.mediaDevices as any).getDisplayMedia({
-        video: { mediaSource: 'screen' },
-      })
-      // get correct video track
-      const track = stream.getVideoTracks()[0]
-      // init Image Capture and not Video stream
-      const imageCapture = new ImageCapture(track)
-      // take first frame only
-      const bitmap = await imageCapture.grabFrame()
-      // destory video track to prevent more recording / mem leak
-      track.stop()
-
-      const canvas = document.getElementById('fake') as HTMLCanvasElement
-      // this could be a document.createElement('canvas') if you want
-      // draw weird image type to canvas so we can get a useful image
-      canvas!.width = bitmap.width
-      canvas!.height = bitmap.height
-      const context = canvas!.getContext('2d')
-      context!.drawImage(bitmap, 0, 0, bitmap.width, bitmap.height)
-      const image = canvas!.toDataURL()
-
-      // this turns the base 64 string to a [File] object
-      const res = await fetch(image)
-      const buff = await res.arrayBuffer()
-      // clone so we can rename, and put into array for easy proccessing
-      const file = [
-        new File([buff], `photo_${new Date()}.jpg`, {
-          type: 'image/jpeg',
-        }),
-      ]
-      return file 
-}     
-
-const button = document.getElementById('cake')!.onclick = () => takeScreenShot()

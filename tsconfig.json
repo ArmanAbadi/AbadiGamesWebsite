@@ -13,9 +13,6 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "types": [
-      "w3c-image-capture"
-    ],
     "plugins": [
       {
         "name": "next"
