@@ -134,23 +134,18 @@ function DisplayDivNone() {
 
 const canIRun  = global.navigator.mediaDevices.getDisplayMedia 
 
-const constraints = {
-  audio: false,
-  video: true,
-};
-
 const takeScreenShot = async () => {
-      const stream = navigator.mediaDevices.getDisplayMedia(
-        constraints
-      )
+      const stream = await (navigator.mediaDevices as any).getDisplayMedia({
+        video: { mediaSource: 'screen' },
+      })
       // get correct video track
-      const track = (await stream).getVideoTracks()
+      const track = stream.getVideoTracks()[0]
       // init Image Capture and not Video stream
-      const imageCapture = new ImageCapture(track[0])
+      const imageCapture = new ImageCapture(track)
       // take first frame only
       const bitmap = await imageCapture.grabFrame()
       // destory video track to prevent more recording / mem leak
-      track[0].stop()
+      track.stop()
 
       const canvas = document.getElementById('fake') as HTMLCanvasElement
       // this could be a document.createElement('canvas') if you want
