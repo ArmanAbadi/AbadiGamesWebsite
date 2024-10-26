@@ -22,7 +22,7 @@ export default function Home() {
   <div className="flex flex-col h-screen justify-between brightColor">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 font-extraboldTop background-start-rgb">
+<div className="navbar p-3 font-extraboldTop background-start-rgb text-white">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div>Need a body? Hire Abadi! Contact me!

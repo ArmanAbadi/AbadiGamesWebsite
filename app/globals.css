@@ -24,7 +24,7 @@
 /* Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241 */
 
 .brightColor{
-    background-color: var(--foreground-rgb);
+    background-color: #ffffff ;
 }
 .background-start-rgb{
 	background-color: var(--background-start-rgb);
@@ -39,6 +39,9 @@
 	color: var(--background-start-rgb);
 }
 .TextColorForLightDark{
+	color: var(--TextColor);
+}
+.InverseTextColorForLightDark{
 	color: var(--TextColor);
 }
 
