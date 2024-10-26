@@ -53,7 +53,7 @@ export default function Home() {
 
 <div className="p-3 py-32 w-full font-extraboldTop">
       <div className="flex w-full justify-center">
-        <h1 className="text-center DarkBlue">  
+        <h1 className="text-center TextColorForLightDark">  
           {"Hi, I'm"}
           <span className="Orangey"> Arman Abadi</span>.
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}

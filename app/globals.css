@@ -3,18 +3,22 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: #e0fbfc ;
-  --background-start-rgb: #3d5a80 ;
-  --background-end-rgb: #293241;
+  --foreground-rgb: #ffffff ;
+  --background-start-rgb: #2c2c2c ;
+  --background-end-rgb: #2c2c2c;
   --Light-Blue: rgb(119, 169, 233) ;
   --Orangey: #ee6c4d;
+  --TextColor: #000000 ;
+  --RainColor: #1f47c7 ;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: #e0fbfc ;
-    --background-start-rgb:#3d5a80 ;
+    --foreground-rgb: #2c2c2c ;
+    --background-start-rgb:#2c2c2c ;
     --background-end-rgb: #293241;
+	--TextColor: #ffffff ;
+	--RainColor: #39bde6 ;
   }
 }
 /* Hex Codes: #3d5a80 // #98c1d9 // #e0fbfc // #ee6c4d //#293241 */
@@ -33,6 +37,9 @@
 }
 .DarkBlue{
 	color: var(--background-start-rgb);
+}
+.TextColorForLightDark{
+	color: var(--TextColor);
 }
 
 body {
@@ -294,7 +301,7 @@ transform: translateY(0) scale(1);
 }
 
 .drop{
-	background-color: var(--background-start-rgb);
+	background-color: var(--RainColor);
 	width: calc(100vw*0.0005);
 	height: calc(100vh*0.1);
 	position: absolute;
@@ -333,7 +340,7 @@ transform: translateY(0) scale(1);
 	left: calc(50% - 100vw *0.1/2);
 
 	border-radius: 50%;
-	border: solid var(--background-start-rgb) 1px;
+	border: solid var(--RainColor) 1px;
 	animation-name: spread;
 	animation-duration: var(--duration);
 	animation-delay: var(--delay);
@@ -375,7 +382,7 @@ transform: translateY(0) scale(1);
 	right: 35%;
 	border-radius: 8px;
 	clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
-	background-color: var(--background-start-rgb);
+	background-color: var(--RainColor);
 	transform-origin: bottom;
 	animation-name: splash;
 	animation-duration: var(--duration);
