@@ -16,7 +16,7 @@
   :root {
     --foreground-rgb: #2c2c2c ;
     --background-start-rgb:#2c2c2c ;
-    --background-end-rgb: #293241;
+    --background-end-rgb: #2c2c2c;
 	--TextColor: #ffffff ;
 	--RainColor: #39bde6 ;
   }
@@ -42,9 +42,6 @@
 	color: var(--background-start-rgb);
 }
 .TextColorForLightDark{
-	color: var(--TextColor);
-}
-.InverseTextColorForLightDark{
 	color: var(--TextColor);
 }
 

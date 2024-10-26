@@ -61,9 +61,9 @@ export default function Home() {
       </div>
 </div>
 
-<div className=" purpleGradient">
+<div className="background-start-rgb">
 
-<h1 className="text-center py-10 font-extrabold">  
+<h1 className="text-center py-10 font-extrabold text-white">  
           {"Projects in the works"}
         </h1>
         
@@ -73,7 +73,7 @@ export default function Home() {
 </div></div></div>
 
 
-<footer className="footer background-end-rgb">
+<footer className="footer background-start-rgb">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
 <img className = "w-16 h-16" src={String(LinkedInLogo)}/>
 </Link>
