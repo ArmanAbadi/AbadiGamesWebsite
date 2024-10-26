@@ -19,7 +19,7 @@ const LinkedInLogo = "LinkedInLogo.png"
 
 export default function Home() {
   return (
-  <div className="flex flex-col h-screen justify-between brightColor">
+  <div className="flex flex-col h-screen justify-between background-color-light">
 
     <main className="flex flex-col h-screen justify-between">
 <div className="navbar p-3 font-extraboldTop background-start-rgb text-white">

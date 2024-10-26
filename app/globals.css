@@ -26,6 +26,9 @@
 .brightColor{
     background-color: #ffffff ;
 }
+.background-color-light{
+	background-color: var(--foreground-rgb);
+}
 .background-start-rgb{
 	background-color: var(--background-start-rgb);
 }
