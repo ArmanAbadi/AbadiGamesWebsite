@@ -17,12 +17,18 @@ const VancouverImagePath = "spencer-watson-VLW2GjQHlgE-unsplash.jpg"
 
 const LinkedInLogo = "LinkedInLogo.png"
 
+//Photo by <a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aditya Chinchure</a> on <a href="https://unsplash.com/photos/cars-on-gray-concrete-road-during-daytime-ghbepAO7BCs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
+
 export default function Home() {
   return (
   <div className="flex flex-col h-screen justify-between background-color-light">
 
     <main className="flex flex-col h-screen justify-between">
-<div className="navbar p-3 font-extraboldTop background-start-rgb text-white">
+      
+<div className='bg-fixed ... bg-[url("/aditya-chinchure-ghbepAO7BCs-unsplash.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
+
+<div className="navbar p-3 font-extraboldTop text-white">
   <Link href={""} className="px-2">AbadiGames</Link>
   <div className="flex flex-1 justify-end"><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div>Need a body? Hire Abadi! Contact me!
@@ -48,40 +54,58 @@ export default function Home() {
         </div>
         
         <div className='divNone' id="divNone">
-<Pond></Pond>
 </div>
 
-<div className="p-3 py-32 w-full font-extraboldTop">
+<div className="p-3 py-32 w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
-        <h1 className="text-center TextColorForLightDark">  
+        <div className='card p-5 backdrop-blur-lg'>
+        <h1 className="text-center text-white">  
           {"Hi, I'm"}
           <span className="Orangey"> Arman Abadi</span>.
            <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
         </h1>
+        </div>
       </div>
+      <Pond></Pond>
+      <div className='card p-5 backdrop-blur-lg' style={{position:"absolute",bottom:"0px"}}><a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by Aditya Chinchure on Unsplash</a></div>
+</div>
 </div>
 
-<div className="background-start-rgb">
 
+<div className='bg-fixed ... bg-[url("/aleksandr-popov-3InMDrsuYrk-unsplash.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
+
+<div className="w-full h-full font-extraboldTop">
 <h1 className="text-center py-10 font-extrabold text-white">  
           {"Projects in the works"}
         </h1>
         
-        <div className="carousel rounded-box flex justify-center space-x-4">
+        <div className="carousel rounded-box py-32 flex justify-center space-x-4">
         <div className="carousel-item">
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
-</div></div></div>
+</div></div>
 
+<div className='card p-5 backdrop-blur-lg' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@5tep5?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by Aleksandr Popov on Unsplash</a></div>
+</div>
+</div>
 
+<footer className="footer p-32 background-start-rgb justify-center snap-start">
+  <div className='justify-center' style={{position:"relative", bottom:"-100%"}}>
+<Link href={"https://www.linkedin.com/in/armanabadi/"}>
+<img className = "w-16 h-16" src={String(LinkedInLogo)}/>
+</Link>
+</div>
+</footer>
+    </main></div>
+  )
+}
+//C:\Users\Arman\Desktop\AbadiGamesWebsite\public\aleksandr-popov-3InMDrsuYrk-unsplash.jpg
+/*
 <footer className="footer background-start-rgb">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
 <img className = "w-16 h-16" src={String(LinkedInLogo)}/>
 </Link>
 </footer>
-
-    </main></div>
-  )
-}
+*/
 
 // <div className="flex w-full justify-end text-2xl">Need a body? Hire Abadi!</div>
 //<DividerGray></DividerGray>
