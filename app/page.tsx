@@ -37,7 +37,7 @@ export default function Home() {
   </div>
 </div>
 
-<div className="container py-24" onClick={() => DisplayDivNone()}>
+<div className="container" onClick={() => DisplayDivNone()}>
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
                 <defs>
                     <mask id="mask">
@@ -56,7 +56,7 @@ export default function Home() {
         <Pond></Pond>
 </div>
 
-<div className="p-3 py-32 w-full h-full font-extraboldTop">
+<div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
         <div className='card p-2 backdrop-blur-3xl'>
         <h1 className="text-center text-white">  
@@ -66,7 +66,7 @@ export default function Home() {
         </h1>
         </div>
       </div>
-      <div className='card p-2 backdrop-blur-md' style={{position:"absolute",bottom:"0px"}}><a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by Aditya Chinchure on Unsplash</a></div>
+      <div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"0px"}}><a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by Aditya Chinchure on Unsplash</a></div>
 </div>
 </div>
 
@@ -83,7 +83,7 @@ export default function Home() {
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
 
-<div className='card p-2 backdrop-blur-md' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
+<div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
 </div>
 </div>
 
