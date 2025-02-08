@@ -26,7 +26,7 @@ export default function Home() {
 
     <main className="flex flex-col h-screen justify-between">
       
-<div className='bg-fixed ... bg-[url("/aditya-chinchure-ghbepAO7BCs-unsplash.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
+<div className='bg-fixed ... bg-[url("/City.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="navbar p-3 font-extraboldTop background-start-rgb text-white">
   <Link href={""} className="px-2">AbadiGames</Link>
@@ -71,7 +71,7 @@ export default function Home() {
 </div>
 
 
-<div className='bg-fixed ... bg-[url("/jms-kFHz9Xh3PPU-unsplash.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
+<div className='bg-fixed ... bg-[url("/Mountains.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="w-full h-full font-extraboldTop">
 <h1 className="text-center py-10 font-extrabold text-white">  
