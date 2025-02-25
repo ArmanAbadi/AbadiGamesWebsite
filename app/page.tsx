@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import DividerGray from './components/DividerGray';
 import AbadiGamesLogo from './components/AbadiGamesLogo';
 import Pond from './components/Pond';
+import UnityComp from './components/UnityComp';
 
 const SlugsImageLink = '/BattleBoii.png';
 const SlugsGameLink = "https://armanabadi.github.io/BattleBoi/";
@@ -36,6 +37,8 @@ export default function Home() {
   </a>
   </div>
 </div>
+
+<UnityComp></UnityComp>
 
 <div className="container" onClick={() => DisplayDivNone()}>
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
