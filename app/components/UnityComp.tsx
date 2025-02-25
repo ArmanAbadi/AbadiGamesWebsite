@@ -4,10 +4,10 @@ import { Unity, useUnityContext } from "react-unity-webgl";
 
 export default function UnityComp() {
   const { unityProvider } = useUnityContext({
-    loaderUrl: "BuildWebGL/Build/BuildWebGL.loader.js",
-    dataUrl: "BuildWebGL/Build/BuildWebGL.data",
-    frameworkUrl: "BuildWebGL/Build/BuildWebGL.framework.js",
-    codeUrl: "BuildWebGL/Build/BuildWebGL.wasm",
+    loaderUrl: "BuildWebGLBrotli/Build/BuildWebGL.loader.js",
+    dataUrl: "BuildWebGLBrotli/Build/BuildWebGL.data.br",
+    frameworkUrl: "BuildWebGLBrotli/Build/BuildWebGL.framework.js.br",
+    codeUrl: "BuildWebGLBrotli/Build/BuildWebGL.wasm.br",
   });
 
 
