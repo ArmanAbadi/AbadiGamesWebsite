@@ -37,8 +37,6 @@ export default function Home() {
   </div>
 </div>
 
-<UnityComp></UnityComp>
-
 <div className="container" onClick={() => DisplayDivNone()}>
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
                 <defs>
