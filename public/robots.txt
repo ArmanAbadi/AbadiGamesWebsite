@@ -1,0 +1,6 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+
+Sitemap: https://abadigames.com/sitemap.txt

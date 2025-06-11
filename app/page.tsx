@@ -59,10 +59,9 @@ export default function Home() {
 <div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
         <div className='card p-2 backdrop-blur-3xl'>
-        <h1 className="text-center text-white">  
-          {"Hi, I'm"}
-          <span className="Orangey"> Arman Abadi</span>.
-           <br></br> {"I'm a Fullstack Developer from Vancouver British Columbia."}
+        <h1 className="text-center text-white">
+          <span className="Orangey"> Arman Abadi</span>{" - Fullstack Developer"}
+           <br></br> {"Located in Vancouver British Columbia."}
         </h1>
         </div>
       </div>
