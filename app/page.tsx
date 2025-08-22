@@ -81,6 +81,13 @@ export default function Home() {
         <div className="carousel-item">
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
+<h2 className="text-center py-10 font-extrabold text-white">  
+          {"Websites"}
+        </h2>
+        <div className='text-center'>
+        <a href="https://vibesexualwellness.com" className='block'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
+        <a href="https://nayelle.com" className='block'>https://nayelle.com for beauty products</a>
+        </div>
 
 <div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
 </div>
