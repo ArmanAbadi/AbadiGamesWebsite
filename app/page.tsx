@@ -73,7 +73,7 @@ export default function Home() {
 <div className='bg-fixed ... bg-[url("/Mountains.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="w-full h-full font-extraboldTop">
-<h1 className="text-center py-10 font-extrabold text-white">  
+<h1 className="text-center py-10 font-extrabold text-white backdrop-blur-md">  
           {"Projects in the works"}
         </h1>
         
@@ -81,10 +81,11 @@ export default function Home() {
         <div className="carousel-item">
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
+
+        <div className='text-center backdrop-blur-md'>
 <h2 className="text-center py-10 font-extrabold text-white">  
           {"Websites"}
         </h2>
-        <div className='text-center'>
         <a href="https://vibesexualwellness.com" className='block'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
         <a href="https://nayelle.com" className='block'>https://nayelle.com for beauty products</a>
         </div>
