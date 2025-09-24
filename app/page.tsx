@@ -29,9 +29,10 @@ export default function Home() {
 <div className='bg-fixed ... bg-[url("/City.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="navbar p-3 font-extraboldTop background-start-rgb text-white">
-  <Link href={""} className="px-2">AbadiGames</Link>
+  <Link href={""} className="px-2 teal-hover">AbadiGames</Link>
   <div className="flex flex-1 justify-end "><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
-  <div>Need a body? Hire Abadi! Contact me!
+  <div className='teal-hover'>
+    Need a body? Hire Abadi! Contact me!
   </div>    
   </a>
   </div>
@@ -58,10 +59,11 @@ export default function Home() {
 
 <div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
-        <div className='card p-2 backdrop-blur-3xl'>
+        <div className='card background-start-rgb p-4'>
         <h1 className="text-center text-white">
           <span className="Orangey"> Arman Abadi</span>{" - Fullstack Developer"}
-           <br></br> {"Located in Vancouver British Columbia."}
+           <br></br> Located in Vancouver British Columbia.  
+           <br></br> Available for websites and mobile/desktop applications!
         </h1>
         </div>
       </div>
@@ -73,21 +75,22 @@ export default function Home() {
 <div className='bg-fixed ... bg-[url("/Mountains.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="w-full h-full font-extraboldTop">
-<h1 className="text-center py-10 font-extrabold text-white backdrop-blur-md">  
+<h1 className="text-center py-10 font-extrabold text-white background-start-rgb">  
           {"Projects in the works"}
         </h1>
         
-        <div className="carousel rounded-box flex justify-center space-x-4">
+        <div className="carousel rounded-box flex justify-center space-x-4 p-8">
         <div className="carousel-item">
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
 
-        <div className='text-center backdrop-blur-md'>
-<h2 className="text-center py-10 font-extrabold text-white">  
-          {"Websites"}
+        <div className='text-center background-start-rgb py-5'>
+<h2 className="text-center font-extrabold text-white">  
+          {"Websites I've worked on!"}
         </h2>
-        <a href="https://vibesexualwellness.com" className='block'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
-        <a href="https://nayelle.com" className='block'>https://nayelle.com for beauty products</a>
+        <a href="https://vibesexualwellness.com" className='block teal-hover'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
+        <a href="https://nayelle.com" className='block teal-hover'>https://nayelle.com for beauty products</a>
+        <a href="https://www.fticorp.ca/" className='block teal-hover'>https://www.fticorp.ca Corporate website</a>
         </div>
 
 <div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
