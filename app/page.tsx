@@ -59,7 +59,7 @@ export default function Home() {
 
 <div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
-        <div className='card background-start-rgb p-4'>
+        <div className='card  background-start-rgb w-fit m-auto p-2'>
         <h1 className="text-center text-white">
           <span className="Orangey"> Arman Abadi</span>{" - Fullstack Developer"}
            <br></br> Located in Vancouver British Columbia.  
@@ -75,7 +75,7 @@ export default function Home() {
 <div className='bg-fixed ... bg-[url("/Mountains.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
 <div className="w-full h-full font-extraboldTop">
-<h1 className="text-center py-10 font-extrabold text-white background-start-rgb">  
+<h1 className="text-center py-10 font-extrabold text-white  background-start-rgb w-fit m-auto px-6 rounded-lg">  
           {"Projects in the works"}
         </h1>
         
@@ -84,13 +84,13 @@ export default function Home() {
 <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
 </div></div>
 
-        <div className='text-center background-start-rgb py-5'>
-<h2 className="text-center font-extrabold text-white">  
+        <div className='text-center py-5'>
+<h2 className="text-center font-extrabold text-white  background-start-rgb w-fit m-auto p-2">  
           {"Websites I've worked on!"}
         </h2>
-        <a href="https://vibesexualwellness.com" className='block teal-hover'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
-        <a href="https://nayelle.com" className='block teal-hover'>https://nayelle.com for beauty products</a>
-        <a href="https://www.fticorp.ca/" className='block teal-hover'>https://www.fticorp.ca Corporate website</a>
+        <a href="https://vibesexualwellness.com" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
+        <a href="https://nayelle.com" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://nayelle.com for beauty products</a>
+        <a href="https://www.fticorp.ca/" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://www.fticorp.ca Corporate website</a>
         </div>
 
 <div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
