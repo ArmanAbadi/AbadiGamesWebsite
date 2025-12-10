@@ -8,6 +8,7 @@ import DividerGray from './components/DividerGray';
 import AbadiGamesLogo from './components/AbadiGamesLogo';
 import Pond from './components/Pond';
 import UnityComp from './components/UnityComp';
+import { useEffect } from 'react';
 
 const SlugsImageLink = '/BattleBoii.png';
 const SlugsGameLink = "https://armanabadi.github.io/BattleBoi/";
@@ -21,6 +22,9 @@ const LinkedInLogo = "LinkedInLogo.png"
 //Photo by <a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aditya Chinchure</a> on <a href="https://unsplash.com/photos/cars-on-gray-concrete-road-during-daytime-ghbepAO7BCs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
 
 export default function Home() {
+  useEffect(()=>
+    DisplayDivNone()
+  );
   return (
   <div className="flex flex-col h-screen justify-between background-color-light">
 
@@ -38,7 +42,7 @@ export default function Home() {
   </div>
 </div>
 
-<div className="container" onClick={() => DisplayDivNone()}>
+<div className="container">
             <svg viewBox="-10 0 120 120"><g className='hoverTarget'>
                 <defs>
                     <mask id="mask">
@@ -60,10 +64,12 @@ export default function Home() {
 <div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
         <div className='card  background-start-rgb w-fit m-auto p-2'>
-        <h1 className="text-center text-white">
+        <h1 className="text-center text-white p-4">
           <span className="Orangey"> Arman Abadi</span>{" - Fullstack Developer"}
            <br></br> Located in Vancouver British Columbia.  
-           <br></br> Available for websites and mobile/desktop applications!
+           <br></br> 7 Years experience building Android & iOS Applications
+           <br></br> Web developer: NextJS, NodeJS, Firebase, Stripe
+           <br></br> Contact me for your project!
         </h1>
         </div>
       </div>
@@ -72,82 +78,56 @@ export default function Home() {
 </div>
 
 
-<div className='bg-fixed ... bg-[url("/Mountains.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
+<div className='bg-fixed bg-cover bg-center bg-no-repeat background-start-rgb' >
 
-<div className="w-full h-full font-extraboldTop">
-<h1 className="text-center py-10 font-extrabold text-white  background-start-rgb w-fit m-auto px-6 rounded-lg">  
-          {"Projects in the works"}
-        </h1>
-        
-        <div className="carousel rounded-box flex justify-center space-x-4 p-8">
-        <div className="carousel-item">
-<GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation"}></GamePreview>
-</div></div>
+<div className="w-full font-extraboldTop">
+  <div className='xl:flex justify-center'>
+    <div className=''>
+      <h1 className="text-center pt-10 font-extrabold text-white w-fit m-auto px-6 rounded-lg">  
+        {"Independant Games"}
+      </h1>
+      <div className="carousel rounded-box flex justify-center p-8">
+        <div className="carousel-item p-4">
+          <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation. Try it now!"}></GamePreview>
+        </div>
+      </div>
+    </div>
+    <div>
+      <h1 className="text-center pt-10 font-extrabold text-white w-fit m-auto px-6 rounded-lg">  
+        {"Professional Games"}
+      </h1>
+      <div className="flex flex-col xl:flex-row xl:carousel rounded-box justify-center p-8">
+        <div className="p-4 xl:m-0 m-auto">
+          <GamePreview ImageLink={"GoTConquest.jpeg"} GameLink={"http://gameofthronesconquest.com/"} GameName={"Game Of Thrones Conquest"} GameDescription={"Based on the award-winning HBO series, Game of Thrones: Conquest™ is a free-to-play strategy game that puts players at the head of their own powerful House, with the ultimate goal of claiming the Iron Throne. Build your great house, raise your army, conquer iconic Seats of Power, and rule the Seven Kingdoms."}></GamePreview>
+        </div>
+        <div className="p-4 xl:m-0 m-auto">
+          <GamePreview ImageLink={"battlerally.jpg"} GameLink={"https://battlerally.com/"} GameName={"Battle Rally"} GameDescription={"Battle and race your way across the finish line with wacky run and gun action in Battle Rally! Use a crew of crazy racers to take on all challengers—all free-to-play on your mobile devices."}></GamePreview>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
         <div className='text-center py-5'>
-<h2 className="text-center font-extrabold text-white  background-start-rgb w-fit m-auto p-2">  
-          {"Websites I've worked on!"}
+<h2 className="text-center font-extrabold text-white w-fit m-auto p-2">  
+          {"Websites"}
         </h2>
-        <a href="https://vibesexualwellness.com" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://vibesexualwellness.com for sexual health & relationship coaching in Vancouver</a>
-        <a href="https://nayelle.com" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://nayelle.com for beauty products</a>
-        <a href="https://www.fticorp.ca/" className='block teal-hover background-start-rgb w-fit m-auto p-2'>https://www.fticorp.ca Corporate website</a>
+        <a href="https://vibesexualwellness.com" className='block teal blue-hover w-fit m-auto p-2'>VibeSexualWellness</a>
+        <a href="https://nayelle.com" className='block teal blue-hover w-fit m-auto p-2'>Nayelle</a>
+        <a href="https://www.fticorp.ca/" className='block teal blue-hover w-fit m-auto p-2'>FTICorp</a>
         </div>
 
-<div className='card p-2 backdrop-blur-md text-white' style={{position:"absolute",bottom:"-100%"}}><a href="https://unsplash.com/@jmsdono?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Photo by jms on Unsplash</a></div>
 </div>
 </div>
 
-<footer className="footer background-start-rgb justify-center">
+<footer className="footer justify-end p-4 background-start-rgb">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
-<img className = "w-16 h-16" src={String(LinkedInLogo)}/>
+<img className = "w-24 h-24" src={String(LinkedInLogo)}/>
 </Link>
 </footer>
     </main></div>
   )
 }
-//C:\Users\Arman\Desktop\AbadiGamesWebsite\public\aleksandr-popov-3InMDrsuYrk-unsplash.jpg
-/*
-<footer className="footer background-start-rgb">
-<Link href={"https://www.linkedin.com/in/armanabadi/"}>
-<img className = "w-16 h-16" src={String(LinkedInLogo)}/>
-</Link>
-</footer>
-*/
-
-// <div className="flex w-full justify-end text-2xl">Need a body? Hire Abadi!</div>
-//<DividerGray></DividerGray>
-
-/* <div className="p-3 py-32 w-full bg-base-100">
-      <div className="flex w-full">
-        <h1>  
-          {"I've previously worked as a Software Engineer on the following projects:"}
-           <br></br> 
-           <br></br><Link href="https://www.gotconquest.com/" style={{color: "blue"}}>Game of thrones conquest.</Link>
-           <br></br><Link href="https://battlerally.com/" style={{color: "blue"}}>Battle Rally.</Link>
-        </h1>
-      </div>
-</div> */
-
-
-{/* <div className='flex w-full justify-center'>
-<img
-  className="maskk"
-  src="ArmanFace.png" />
-</div>
-
-<div className='flex w-32 justify-center'>
-<svg width="868" height="988" viewBox="0 0 868 988" fill="black" xmlns="http://www.w3.org/2000/svg">
-<path d="M414 5.547C426.376 -1.59831 441.624 -1.59831 454 5.547L847.013 232.453C859.389 239.598 867.013 252.803 867.013 267.094V720.906C867.013 735.197 859.389 748.402 847.013 755.547L454 982.453C441.624 989.598 426.376 989.598 414 982.453L20.9873 755.547C8.61125 748.402 0.987305 735.197 0.987305 720.906V267.094C0.987305 252.803 8.61126 239.598 20.9873 232.453L414 5.547Z" fill="black"/>
-</svg>
-</div> */}
-
-{/* <div className="flex w-full justify-center">
-  <div className="py-10 w-96 h-96">
-<img
-  className="mask mask-hexagon2"
-  src="ArmanFace.png" />
-  </div>
-</div> */}
 
 function DisplayDivNone() {
   var T = document.getElementById("divNone");

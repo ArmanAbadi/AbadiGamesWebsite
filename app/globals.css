@@ -26,7 +26,12 @@
 .teal-hover:hover{
 	color: #4dd6ee;
 }
-
+.teal{
+	color: #4dd6ee;
+}
+.blue-hover:hover{
+	color: #4d80ee;
+}
 .brightColor{
     background-color: #ffffff ;
 }
