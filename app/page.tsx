@@ -78,7 +78,7 @@ export default function Home() {
       </div>
 
 
-<div className="flex w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]" >
+<div className="flex bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]" >
 <div className="w-full font-extraboldTop">
   <div className='xl:flex justify-center'>
     <div className=''>
