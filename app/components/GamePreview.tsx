@@ -6,7 +6,7 @@ import { UrlObject } from 'url'
 const GamePreview = (GamePreviewImageAndLinkProps: GamePreviewImageAndLinkProps) => {
   return (
 
-    <div className="card w-96 shadow-xl text-black brightColor p-1">
+    <div className="card max-w-96 shadow-xl text-black brightColor p-1">
   <figure>
     <Link href={GamePreviewImageAndLinkProps.GameLink}>
     <img src={String(GamePreviewImageAndLinkProps.ImageLink)} />
