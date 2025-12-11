@@ -32,7 +32,7 @@ export default function Home() {
       
 <div className='bg-fixed ... bg-[url("/City.jpg")] min-h-screen max-h-screen bg-cover bg-center bg-no-repeat' >
 
-<div className="navbar p-3 font-extraboldTop background-start-rgb text-white">
+<div className="navbar p-3 font-extraboldTop bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px] text-white">
   <Link href={""} className="px-2 teal-hover">AbadiGames</Link>
   <div className="flex flex-1 justify-end "><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
   <div className='teal-hover'>
@@ -63,7 +63,7 @@ export default function Home() {
 
 <div className="w-full h-full font-extraboldTop">
       <div className="flex w-full justify-center">
-        <div className='card  background-start-rgb w-fit m-auto p-2'>
+        <div className='card  bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px] w-fit m-auto p-2'>
         <h1 className="text-center text-white p-4">
           <span className="Orangey"> Arman Abadi</span>{" - Fullstack Developer"}
            <br></br> Located in Vancouver British Columbia.  
@@ -78,8 +78,7 @@ export default function Home() {
 </div>
 
 
-<div className='bg-fixed bg-cover bg-center bg-no-repeat background-start-rgb' >
-
+<div className=" top-0 z-[-2] h-screen w-screen bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]" >
 <div className="w-full font-extraboldTop">
   <div className='xl:flex justify-center'>
     <div className=''>
@@ -120,7 +119,7 @@ export default function Home() {
 </div>
 </div>
 
-<footer className="footer justify-end p-4 background-start-rgb">
+<footer className="footer justify-end p-4 bg-[#000000] bg-[radial-gradient(#ffffff33_1px,#000000_1px)] bg-[size:20px_20px]">
 <Link href={"https://www.linkedin.com/in/armanabadi/"}>
 <img className = "w-24 h-24" src={String(LinkedInLogo)}/>
 </Link>
