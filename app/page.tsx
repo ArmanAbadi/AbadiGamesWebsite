@@ -96,10 +96,10 @@ export default function Home() {
         {"Professional Games"}
       </h1>
       <div className="flex flex-col xl:flex-row xl:carousel rounded-box justify-center p-8">
-        <div className="xl:carousel-item xl:p-4 xl:m-0 mx-auto">
+        <div className="xl:carousel-item p-4 xl:m-0 mx-auto">
           <GamePreview ImageLink={"GoTConquest.jpeg"} GameLink={"http://gameofthronesconquest.com/"} GameName={"Game Of Thrones Conquest"} GameDescription={"Based on the award-winning HBO series, Game of Thrones: Conquest™ is a free-to-play strategy game that puts players at the head of their own powerful House, with the ultimate goal of claiming the Iron Throne. Build your great house, raise your army, conquer iconic Seats of Power, and rule the Seven Kingdoms."}></GamePreview>
         </div>
-        <div className="xl:carousel-item xl:p-4 xl:m-0 mx-auto">
+        <div className="xl:carousel-item p-4 xl:m-0 mx-auto">
           <GamePreview ImageLink={"battlerally.jpg"} GameLink={"https://battlerally.com/"} GameName={"Battle Rally"} GameDescription={"Battle and race your way across the finish line with wacky run and gun action in Battle Rally! Use a crew of crazy racers to take on all challengers—all free-to-play on your mobile devices."}></GamePreview>
         </div>
       </div>
