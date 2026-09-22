@@ -90,9 +90,6 @@ export default function Home() {
           <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation. Try it now!"}></GamePreview>
         </div>
       </div>
-      <Link href="/nodefall">
-        Play NodeFall
-      </Link>
     </div>
     <div>
       <h1 className="text-center pt-10 font-extrabold text-white w-fit m-auto px-6 rounded-lg">  
