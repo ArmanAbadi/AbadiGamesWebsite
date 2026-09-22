@@ -10,13 +10,8 @@ import Pond from './components/Pond';
 import UnityComp from './components/UnityComp';
 import { useEffect } from 'react';
 
-import { browserLocalPersistence, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, setPersistence, signInWithEmailAndPassword, User } from 'firebase/auth';
-import { initializeApp } from 'firebase/app';
-import { getFunctions, httpsCallable } from 'firebase/functions';
-
 const SlugsImageLink = '/BattleBoii.png';
 const SlugsGameLink = "https://armanabadi.github.io/BattleBoi/";
-const LineTowerWarsLink = "https:linetowerwars.ca";
 
 const PurpleColor = "217, 70, 239";
 
@@ -25,65 +20,11 @@ const VancouverImagePath = "spencer-watson-VLW2GjQHlgE-unsplash.jpg"
 const LinkedInLogo = "LinkedInLogo.png"
 
 //Photo by <a href="https://unsplash.com/@adityachinchure?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Aditya Chinchure</a> on <a href="https://unsplash.com/photos/cars-on-gray-concrete-road-during-daytime-ghbepAO7BCs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-// Import the functions you need from the SDKs you need
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyA84eIulI7Vzq7P0cNZonWB31sjrXhqpkY",
-  authDomain: "cardx-4a8ba.firebaseapp.com",
-  projectId: "cardx-4a8ba",
-  storageBucket: "cardx-4a8ba.firebasestorage.app",
-  messagingSenderId: "855668836944",
-  appId: "1:855668836944:web:f538b09998b6f008f75f55"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-// Initialize Firebase
-const auth = getAuth();
-const functions = getFunctions(app);
-
-const Get_PHash = httpsCallable(functions, 'Get_PHash');
-const Get_HammingDistance = httpsCallable(functions, 'Get_HammingDistance');
-
-async function SignIn(email: string, password: string){
-
-  signInWithEmailAndPassword(auth, email, password)
-    .then(async (userCredential) => {
-
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      // ..
-      console.log(errorMessage);
-    });
-}
 
 export default function Home() {
   useEffect(()=>
     DisplayDivNone()
   );
-
-  async function signin(){
-    await SignIn("armanabadi.aa@gmail.com","Zorll123!");
-    console.log("signed in");
-  }
-
-  async function getphash(){
-    let response = await Get_PHash() as any;
-    console.log(response.data);
-    return response.data;
-  }
-
-  async function getDistance(){
-    let response = await Get_HammingDistance() as any;
-    console.log(response.data);
-    return response.data;
-  }
-
   return (
   <div className="flex flex-col justify-between background-color-light">
 
@@ -93,13 +34,10 @@ export default function Home() {
         <div className="flex flex-1 justify-end "><a href="mailto:armanabadi.aa@gmail.com?Subject=AbadiGames Enquiry">
         <div className='teal-hover'>
           Need a body? Hire Abadi! Contact me!
-        </div> 
+        </div>    
         </a>
         </div>
       </div>
-        <button onClick={()=>signin()}>sign in</button>   
-        <button onClick={()=>getphash()}>get phash</button>   
-        <button onClick={()=>getDistance()}>get distance</button>   
       <div className='flex flex-col bg-fixed ... bg-[url("/City.jpg")] min-h-screen bg-cover bg-center bg-no-repeat pb-6 px-4' >
 
 
@@ -148,9 +86,6 @@ export default function Home() {
         {"Independant Games"}
       </h1>
       <div className="flex flex-col xl:flex-row xl:carousel rounded-box justify-center p-8">
-        <div className="xl:carousel-item xl:p-4  xl:m-0 mx-auto">
-          <GamePreview ImageLink={"/City.jpg"} GameLink={LineTowerWarsLink} GameName={"Line Tower Wars"} GameDescription={"Line Tower Wars, a multiplayer game mdade with PIXIjs rendering library, Vite website hosted on cloudeflare and NodeJS server running on Render"}></GamePreview>
-        </div>
         <div className="xl:carousel-item xl:p-4  xl:m-0 mx-auto">
           <GamePreview ImageLink={SlugsImageLink} GameLink={SlugsGameLink} GameName={"Battle Boi"} GameDescription={"Real time multiplayer 2D RPG with infinite perlin noise map generation. Try it now!"}></GamePreview>
         </div>
